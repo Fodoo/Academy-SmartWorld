@@ -1,0 +1,24 @@
+@mixin more
+	display: block
+	position: relative
+	margin-top: 38px
+	color: #0f7bff
+	font-size: 16px
+	font-weight: 500
+	text-decoration: none
+	&::after
+		content: url("../icons/arrow_more.png")
+		margin-left: 8px
+		&:hover
+			color: #0063dd
+			text-decoration: none
+
+@mixin descr
+	color: #929292
+	font-size: 16px
+	font-weight: 400
+
+@mixin title
+	color: #333333
+	font-size: 32px
+	font-weight: 500
