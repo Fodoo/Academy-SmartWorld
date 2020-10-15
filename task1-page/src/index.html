@@ -15,8 +15,10 @@
 	<section class="promo">
 		<div class="container">
 			<header class="header">
-				<a href="#" class="header__logo">AppSon</a>
-				<nav class="header__nav">
+				<div class="header__logo">
+					<a href="#">AppSon</a>
+				</div>
+				<nav class="header__navbar">
 					<ul class="header__menu">
 						<li class="header__item"><a href="#" class="header__link">HOME</a></li>
 						<li class="header__item"><a href="#" class="header__link">FEATURES</a></li>
@@ -114,10 +116,10 @@
 	<section class="work">
 		<div class="container">
 			<h2 class="work__question">How Does It Works?</h2>
-			<div class="work__images">
+			<!-- <div class="work__images">
 				<img src="img/bold_line_one.png" alt="bold_line">
 				<img src="img/bold_line_two.png" alt="bold_line">
-			</div>
+			</div> -->
 			<div class="work__descr">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 				incididunt ut labore<br>et dolore magna aliqua. Lorem ipsum dolor sit amet.
@@ -202,55 +204,160 @@
 	<section class="feedback">
 		<div class="container">
 			<div class="feedback__wrapper">
-				<img src="img/hands.png" alt="hands">
+				<img src="img/hands.png" alt="hands" class="feedback__img">
 				<div class="feedback__peoples-wrapper">
 					<h2 class="feedback__title">Trusted By More Than 55M Peoples</h2>
-					<div class="feedback__slider">
-						<div class="feedback__slider-wrapper">
-							<div class="feedback__slider-inner">
-								<div class="feedback__slide">
-									<a href="" class="feedback__social-item">
-										<span class="icon-twitter"></span>
-									</a>
-									<div class="feedback__name">Raisa Moni</div>
-									<div class="feedback__customer">Envato Customer</div>
-									<div class="feedback__descr">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-										sed do eiusmod tempor incididunt ut labore etamet.
-									</div>
+					<div class="feedback__visible">
+						<div class="feedback__slider">
+							<div class="feedback__slide">
+								<a href="#" class="feedback__social-item">
+									<span class="icon-twitter"></span>
+								</a>
+								<div class="feedback__name">Raisa Moni</div>
+								<div class="feedback__customer">Envato Customer</div>
+								<div class="feedback__descr">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+									sed do eiusmod tempor incididunt ut labore etamet.
 								</div>
-								<div class="feedback__slide">
-									<a href="" class="feedback__icon-twitter"></a>
-									<div class="feedback__name">Raisa Moni</div>
-									<div class="feedback__customer">Envato Customer</div>
-									<div class="feedback__descr">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-										sed do eiusmod tempor incididunt ut labore etamet.
-									</div>
+							</div>
+							<div class="feedback__slide">
+								<a href="#" class="feedback__social-item">
+									<span class="icon-twitter"></span>
+								</a>
+								<div class="feedback__name">Raisa Moni</div>
+								<div class="feedback__customer">Envato Customer</div>
+								<div class="feedback__descr">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+									sed do eiusmod tempor incididunt ut labore etamet.
 								</div>
-								<div class="feedback__slide">
-									<a href="" class="feedback__icon-twitter"></a>
-									<div class="feedback__name">Raisa Moni</div>
-									<div class="feedback__customer">Envato Customer</div>
-									<div class="feedback__descr">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-										sed do eiusmod tempor incididunt ut labore etamet.
-									</div>
+							</div>
+							<div class="feedback__slide">
+								<a href="#" class="feedback__social-item">
+									<span class="icon-twitter"></span>
+								</a>
+								<div class="feedback__name">Raisa Moni</div>
+								<div class="feedback__customer">Envato Customer</div>
+								<div class="feedback__descr">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+									sed do eiusmod tempor incididunt ut labore etamet.
 								</div>
 							</div>
 						</div>
-						<!-- <ol class="feedback__carousel-indicators">
-						<li></li>
-						<li></li>
-						<li></li>
-					</ol> -->
+					</div>
+					<ol class="feedback__slider-indicators">
+						<li data-slide-to="1"></li>
+						<li data-slide-to="2"></li>
+						<li data-slide-to="3"></li>
+					</ol>
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<section class="news">
+		<div class="container">
+			<h2 class="news__question">Latest News From Us</h2>
+			<div class="news__descr">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Lorem ipsum dolor sit amet.
+			</div>
+			<div class="posts">
+				<div class="posts-one">
+					<img src="img/fire.png" alt="post_one">
+					<div class="posts-one__title">
+						The master bedroom suite is phenomenally
+						spacious
+					</div>
+					<div class="posts-one__descr">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						laboris.
+					</div>
+					<a href="#" class="posts-one__more">Continue Reading</a>
+				</div>
+				<div class="posts-two">
+					<div class="posts-two__item">
+						<img src="img/newspaper.png" alt="post_two">
+						<div class="posts-two__text">
+							<div class="posts-two__title">
+								The master bedroom suite is phenomey spacious
+							</div>
+							<div class="posts-two__descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+							</div>
+						</div>
+					</div>
+					<div class="posts-two__item">
+						<img src="img/operators.png" alt="post_three">
+						<div class="posts-two__text">
+							<div class="posts-two__title">
+								The master bedroom suite is phenomey spacious
+							</div>
+							<div class="posts-two__descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+							</div>
+						</div>
+					</div>
+					<div class="posts-two__item">
+						<img src="img/newspaper_in_hands.png" alt="post_four">
+						<div class="posts-two__text">
+							<div class="posts-two__title">
+								The master bedroom suite is phenomey spacious
+							</div>
+							<div class="posts-two__descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 	</section>
 
-	<!-- СЛАЙДЕР -->
-	<!--  -->
+	<section class="free">
+		<div class="container">
+			<div class="free__wrapper">
+				<div class="free__text">
+					<h2 class="free__title">Try 30 Days Free Trial</h2>
+					<div class="free__descr">No credit card required</div>
+				</div>
+				<button class="free__btn">Get Started</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="widget">
+		<div class="container">
+			<h2 class="widget__logo">AppSon</h2>
+			<form id="subscribe" action="#" class="widget-form">
+				<input required name="email" placeholder="Enter Your Email" type="email">
+				<button type="submit" form="subscribe" class="widget-form__btn">Subscribe</button>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__divider"></div>
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__rights">2018 Copyright, All Rights Reserved by AppSon</div>
+				<div class="footer__links">
+					<a href="#">Terms & Condition</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Help</a>
+				</div>
+				<div class="footer__social">
+					<a href="#"><span class="icon-facebook"></span></a>
+					<a href="#"><span class="icon-twitter"></span></a>
+					<a href="#"><span class="icon-youtube"></span></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/script.js"></script>
 </body>
 
 </html>
