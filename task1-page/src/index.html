@@ -13,7 +13,7 @@
 
 <body>
 	<section class="promo">
-		<div class="container">
+		<div class="promo__container">
 			<header class="header">
 				<div class="header__logo">
 					<a href="#">AppSon</a>
@@ -41,14 +41,14 @@
 				</div>
 			</div>
 			<img src="img/phones.png" alt="phones" class='promo__phones'>
+			<a href="#" class="promo__down">
+				<img src="icons/arrow_down.png" alt="arrow" class="promo__arrow">
+			</a>
 		</div>
 	</section>
 
-	<section id="down" class="features">
-		<div class="container">
-			<a href="#down" class="features__down">
-				<img src="icons/arrow_down.png" alt="arrow" class="features__arrow">
-			</a>
+	<section class="features">
+		<div class="features__container">
 			<div class="features__wrapper">
 				<div class="features__item">
 					<div class="features__icon features__icon_blue"><img src="icons/document.png" alt="document" />
@@ -77,7 +77,7 @@
 	</section>
 
 	<section class="about">
-		<div class="container">
+		<div class="about__container">
 			<div class="about__messaging">
 				<img src="img/rectangle.png" alt="rectangle_first" class="about__rectangle-first">
 				<div class="about__images">
@@ -114,16 +114,12 @@
 	</section>
 
 	<section class="work">
-		<div class="container">
+		<div class="work__container">
 			<h2 class="work__question">How Does It Works?</h2>
-			<!-- <div class="work__images">
-				<img src="img/bold_line_one.png" alt="bold_line">
-				<img src="img/bold_line_two.png" alt="bold_line">
-			</div> -->
 			<div class="work__descr">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 				incididunt ut labore<br>et dolore magna aliqua. Lorem ipsum dolor sit amet.
-				<div class="work__connect"></div>
+				<div class="work__line"></div>
 			</div>
 			<div class="work__wrapper">
 				<div class="work__item">
@@ -152,7 +148,7 @@
 	</section>
 
 	<section class="pricing">
-		<div class="container">
+		<div class="pricing__container">
 			<div class="pricing__wrapper">
 				<div class="choice">
 					<h2 class="choice__title">Pricing Plan</h2>
@@ -202,7 +198,7 @@
 	</section>
 
 	<section class="feedback">
-		<div class="container">
+		<div class="feedback__container">
 			<div class="feedback__wrapper">
 				<img src="img/hands.png" alt="hands" class="feedback__img">
 				<div class="feedback__peoples-wrapper">
@@ -257,7 +253,7 @@
 	</section>
 
 	<section class="news">
-		<div class="container">
+		<div class="news__container">
 			<h2 class="news__question">Latest News From Us</h2>
 			<div class="news__descr">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -317,7 +313,7 @@
 	</section>
 
 	<section class="free">
-		<div class="container">
+		<div class="free__container">
 			<div class="free__wrapper">
 				<div class="free__text">
 					<h2 class="free__title">Try 30 Days Free Trial</h2>
@@ -329,7 +325,7 @@
 	</section>
 
 	<section class="widget">
-		<div class="container">
+		<div class="widget__container">
 			<h2 class="widget__logo">AppSon</h2>
 			<form id="subscribe" action="#" class="widget-form">
 				<input required name="email" placeholder="Enter Your Email" type="email">
@@ -340,7 +336,7 @@
 
 	<footer class="footer">
 		<div class="footer__divider"></div>
-		<div class="container">
+		<div class="footer__container">
 			<div class="footer__wrapper">
 				<div class="footer__rights">2018 Copyright, All Rights Reserved by AppSon</div>
 				<div class="footer__links">
@@ -356,6 +352,10 @@
 			</div>
 		</div>
 	</footer>
+
+	<a href="#" class="pageup">
+		<img src="icons/arrow_up.png" alt="up">
+	</a>
 
 	<script src="js/script.js"></script>
 </body>

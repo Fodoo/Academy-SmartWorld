@@ -1,6 +1,8 @@
 "use strict";
 
 window.addEventListener("DOMContentLoaded", function () {
+    // SLIDER
+
     const dots = document.querySelectorAll(".feedback__slider-indicators li"),
         slider = document.querySelector(".feedback__slider"),
         slide = document.querySelector(".feedback__slide"),
@@ -14,8 +16,6 @@ window.addEventListener("DOMContentLoaded", function () {
 		width: 30px;
 		background-color: #0f7bff;
 	`;
-
-    console.log(width);
 
     dots.forEach((dot) => {
         dot.addEventListener("click", (e) => {
@@ -44,4 +44,39 @@ window.addEventListener("DOMContentLoaded", function () {
     function deleteNotDigits(str) {
         return +str.replace(/\D/g, "");
     }
+
+    // BUTTON UP
+
+    const btnUp = document.querySelector(".pageup");
+
+    function scrollByPromo() {
+        if (window.pageYOffset > 1600) {
+            btnUp.style.cssText = `
+				opacity: 1;
+				transition: 1s all;
+
+			`;
+        } else {
+            btnUp.style.cssText = `
+				opacity: 0;
+				transition: 200ms all;
+			`;
+        }
+    }
+
+    window.addEventListener("scroll", scrollByPromo);
+
+    btnUp.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.body.scrollIntoView({ behavior: "smooth" });
+    });
+
+    // BUTTON DOWN
+
+    const btnDown = document.querySelector(".promo__down"),
+        features = document.querySelector(".features");
+    btnDown.addEventListener("click", (e) => {
+        e.preventDefault();
+        features.scrollIntoView({ behavior: "smooth" });
+    });
 });

@@ -1,13 +1,17 @@
 .promo
+	position: relative
 	min-height: 1043px
 	background: url("../img/bg/promo.png") center (center / cover) no-repeat
 	background-color: #f5fcfd
+	&__container
+		max-width: 1920px
+		margin: 0 auto
 	.header
 		display: flex
 		justify-content: space-between
 		align-items: center
-		height: 100px
 		padding: 0 140px
+		height: 100px
 		&__logo
 			width: 179px
 			border-radius: 0 0 22px 22px
@@ -22,7 +26,8 @@
 					text-decoration: none
 					color: #feffff
 		&__navbar
-			padding-left: 835px
+			margin-left: auto
+			margin-right: 53px
 			display: flex
 		&__menu
 			display: flex
@@ -55,9 +60,10 @@
 			&:focus
 				outline: none
 	&__wrapper
+		max-width: 615px
+		margin: 0 auto
 		margin-top: 100px
 		text-align: center
-		padding: 0 654px
 	&__title
 		color: #333333
 		font-size: 36px
@@ -71,8 +77,7 @@
 		margin: 0 auto
 		margin-top: 37px
 		display: flex
-		justify-content: space-between
-		width: 360px
+		justify-content: center
 	&__btn
 		width: 165px
 		height: 50px
@@ -88,6 +93,7 @@
 			background-color: #0f7bff
 			color: #ffffff
 		&:first-child
+			margin-right: 30px
 			background-color: #0f7bff
 			border: none
 			color: #ffffff
@@ -97,18 +103,13 @@
 				border: 2px solid #0f7bff
 	&__phones
 		position: absolute
-		top: 457px
+		bottom: 0
 		left: 50%
 		transform: translateX(-50%)
 		z-index: 1
-.features
-	position: relative
-	min-height: 635px
-	background-color: #f5fcfd
-	z-index: 2
 	&__down
 		position: absolute
-		top: -35px
+		bottom: -35px
 		left: 50%
 		transform: translateX(-50%)
 		width: 70px
@@ -117,17 +118,26 @@
 		border-radius: 50%
 		background-color: #ffffff
 		cursor: pointer
+		z-index: 3
+		&:hover
+			background-color: #0f7bff
 	&__arrow
 		position: absolute
 		left: 50%
 		top: 50%
 		transform: translate(-50%, -50%)
+.features
+	position: relative
+	min-height: 635px
+	background-color: #f5fcfd
+	z-index: 2
+	&__container
+		max-width: 1140px
+		margin: 0 auto
 	&__wrapper
 		display: flex
 		justify-content: space-between
-		min-height: 340px
-		margin: 0 390px
-		padding: 165px 0 130px 0
+		padding: 165px 0 180px 0
 	&__item
 		max-width: 360px
 		min-height: 290px
@@ -139,7 +149,6 @@
 		&:nth-child(2)
 			position: relative
 			top: 50px
-			margin: 0 30px
 	&__icon
 		display: flex
 		justify-content: center
@@ -165,12 +174,11 @@
 		line-height: 27px
 		@include descr
 .about
-	min-height: 1190px
 	background-color: #ffffff
 	padding: 130px 0
-	margin: 0 auto
-	.container
-		max-width: 1370px
+	&__container
+		max-width: 1368px
+		margin: 0 auto
 	&__messaging
 		position: relative
 		display: flex
@@ -212,6 +220,7 @@
 		max-width: 544px
 		margin-left: 243px
 		&__title
+			margin-bottom: 0
 			line-height: 36px
 			text-align: left
 			@include title
@@ -229,11 +238,12 @@
 	min-height: 646px
 	background-color: #f5fcfd
 	padding: 151px 0 127px 0
-	.container
+	&__container
 		max-width: 1078px
+		margin: 0 auto
 	&__question
 		position: relative
-		margin: 0
+		margin-bottom: 0
 		color: #333333
 		font-size: 32px
 		font-weight: 500
@@ -258,7 +268,7 @@
 		text-align: center
 		line-height: 27px
 		@include descr
-	&__connect
+	&__line
 		position: absolute
 		margin-top: 98px
 		width: 686px
@@ -299,10 +309,9 @@
 		@include descr
 .pricing
 	padding: 130px 0
-	min-height: 836px
-	margin: 0 auto
-	.container
-		max-width: 1195px
+	&__container
+		max-width: 1145px
+		margin: 0 auto
 	&__wrapper
 		display: flex
 		justify-content: space-between
@@ -396,7 +405,7 @@
 				color: #ffffff
 	.choice
 		width: 330px
-		margin-right: 60px
+		margin-right: 30px
 		&__title
 			text-align: left
 			@include title
@@ -410,7 +419,7 @@
 			height: 50px
 			margin-top: 37px
 		&__btn-monthly
-			width: 165px
+			width: 50%
 			border-radius: 25px 0 0 25px
 			background-color: #0f7bff
 			border: none
@@ -425,7 +434,7 @@
 				border: 2px solid #0f7bff
 				border-right: none
 		&__btn-yearly
-			width: 165px
+			width: 50%
 			border-radius: 0 25px 25px 0
 			border: 2px solid #0f7bff
 			background-color: transparent
@@ -438,8 +447,10 @@
 				background-color: #0f7bff
 				color: #ffffff
 .feedback
-	min-height: 608px
 	background-color: #f5fcfd
+	&__container
+		max-width: 1920px
+		margin: 0 auto
 	&__wrapper
 		display: flex
 		align-items: center
@@ -449,16 +460,18 @@
 	&__peoples-wrapper
 		margin-left: 127px
 	&__title
+		margin-bottom: 0
 		text-align: left
+		line-height: 32px
 		@include title
 	&__visible
 		display: flex
-		width: 300px
+		margin-top: 44px
+		width: 360px
 		overflow: hidden
 	&__slider
 		position: relative
 		display: flex
-		margin-top: 44px
 		transition: 1s all
 		z-index: 1
 	&__slide
@@ -502,11 +515,12 @@
 		line-height: 27px
 		text-align: left
 	&__slider-indicators
+		margin: 0
+		padding: 0
 		width: 80px
 		margin-top: 50px
 		display: flex
 		justify-content: space-between
-		padding: 0
 		list-style: none
 		li
 			width: 20px
@@ -516,10 +530,10 @@
 			cursor: pointer
 			transition: 0.5s all
 .news
-	min-height: 960px
 	padding: 152px 0 127px 0
-	.container
+	&__container
 		max-width: 1140px
+		margin: 0 auto
 	&__question
 		position: relative
 		margin: 0
@@ -555,7 +569,7 @@
 	.posts-one
 		max-width: 555px
 		&__title
-			margin-top: 40px
+			margin-top: 36px
 			color: #0f7bff
 			font-size: 24px
 			font-weight: 500
@@ -563,6 +577,7 @@
 		&__descr
 			margin-top: 24px
 			text-align: left
+			line-height: 27px
 			@include descr
 		&__more
 			color: #0f7bff
@@ -586,18 +601,18 @@
 			font-weight: 500
 			text-align: left
 		&__descr
-			margin-top: 11px
+			margin-top: 12px
 			color: #929292
 			font-size: 16px
 			font-weight: 400
 			line-height: 27px
 			text-align: left
 .free
-	min-height: 336px
 	padding: 134px 0
 	background-color: #f5fcfd
-	.container
+	&__container
 		max-width: 752px
+		margin: 0 auto
 	&__wrapper
 		display: flex
 		justify-content: space-between
@@ -633,17 +648,18 @@
 		&:focus
 			outline: none
 .widget
-	min-height: 386px
 	background-color: #0f7bff
-	padding: 129px 0
+	padding: 128px 0
 	text-align: center
-	.container
+	&__container
 		max-width: 555px
+		margin: 0 auto
 	&__logo
+		margin-bottom: 0
 		color: #ffffff
 		font-size: 36px
 		font-weight: 700
-		line-height: 24px
+		line-height: 36px
 	.widget-form
 		width: 555px
 		display: flex
@@ -689,11 +705,12 @@
 	background-color: #0f7bff
 	&__divider
 		margin: 0 auto
-		max-width: 1920px
+		width: 100%
 		height: 1px
 		background-color: #ffffff
-	.container
+	&__container
 		max-width: 1140px
+		margin: 0 auto
 	&__wrapper
 		display: flex
 		justify-content: space-between
@@ -712,7 +729,8 @@
 		width: 348px
 		display: flex
 		justify-content: space-between
-		margin-left: 115px
+		margin-left: auto
+		margin-right: 110px
 		a
 			color: #d8d8d8
 			font-size: 16px
@@ -730,3 +748,19 @@
 				margin-right: 0
 			&:hover
 				color: #ffffff
+.pageup
+	position: fixed
+	right: 150px
+	bottom: 33px
+	width: 45px
+	height: 45px
+	border-radius: 3px
+	border: 2px solid #378ffc
+	background-color: #ffffff
+	opacity: 0
+	z-index: 4
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
